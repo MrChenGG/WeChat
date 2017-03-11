@@ -1,0 +1,15 @@
+/* pages/test2/test2.wxss */
+
+
+.storylist{background-color: #f4f4f4;}
+.storylist .storylist_title{font-size: 1rem;font-weight: bold;color:chocolate;line-height: 2em;}
+.storylist .story_box{display: flex;justify-content: space-between;align-items: center;margin-bottom: 0.5rem;padding: 0.25rem;background-color: white;position: relative;}
+.storylist .story_box .checkbtn{position: absolute;left: 0;top: 0;width: 100%;height: 100%;opacity: 0;border: 0;}
+.storylist .story_box .checkbtn:after{border: 0;}
+.storylist .story_box image{width: 5rem;height: 5rem;}
+.storylist .story_box .test_box{width: 13rem;padding-right: 0.5rem;}
+.storylist .story_box .test_box text{font-size: 16px;color: #333;font-weight: 800;}
+.storylist .story_box .test_box view{font-size: 12px;}
+.storydetail{}
+.storydetail .back{position: fixed;width: 100%;top: 0;left: 0;}
+.storydetail text{display: block;padding: 0px 0.5rem;}

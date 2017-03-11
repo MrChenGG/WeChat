@@ -1,0 +1,141 @@
+.clear{
+  overflow: auto;
+  _height: 1%;
+}
+.nav_p{
+    display: flex;
+}
+.nav_p button{
+    flex: 1;
+    border: 0;
+    border-radius: 0;
+
+}
+.nav_p button::after{
+    border: 0;
+}
+.nav_p .now_{
+    border-bottom: 2px solid green;
+    color: green;
+}
+.main{
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+.swiper image{
+    width: 100%;
+    height: 100%;
+    }
+.swiper{
+    margin-bottom: 14px;
+}
+.list_main{
+    padding: 0 10px;
+}
+.list_main .fm{
+    display: block;
+    line-height: 24px;
+    margin-bottom: 11px;
+}
+.list_main .list{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 7px;
+}
+.list_main .listd{
+    width: 9rem;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.list_main .listd .box{
+    position: relative;
+    color: white;
+}
+.list_main .listd .box .lisennum{
+    position: absolute;
+    left: 0.25rem;
+    bottom: 0.5rem;
+    font-size: 0.65rem;
+    line-height: 1em;
+    padding-left: 0.8rem;
+    height: 0.52rem;
+    background: url(https://y.gtimg.cn/mediastyle/mobile/yqq_v5/img/list_sprite.png?max_age=19830212&d=20151105145423) no-repeat left -2.7rem;
+    background-size: 1.3rem auto;
+}
+.list_main .listd .box .oplisen{
+    position: absolute;
+    right: 0.25rem;
+    bottom: 0.25rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url(https://y.gtimg.cn/mediastyle/mobile/yqq_v5/img/list_sprite.png?max_age=19830212&d=20151105145423) no-repeat;
+    background-size: 1.2rem auto;
+}
+.list_main .listd image{
+    display: block;
+    width: 9.5rem;
+    height: 9.5rem;
+}
+.list_main .listd .title{
+    display: block;
+    height: 1.8rem;
+    font-size: 0.6rem;
+    padding: 5px 7px 5px 7px;
+}
+
+
+
+.main .vessel{
+    margin: 10px 10px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    position: relative;
+}
+.main .vessel .icon_box{
+    width: 0.3rem;
+    height: 0.35rem;
+    border-right: 1px solid #b2b2b2;
+    border-bottom: 1px solid #b2b2b2;
+    position: absolute;
+    transform: rotate(-45deg);
+    right: 0.5rem;
+    top: 50%;
+    margin-top: -0.2rem;
+}
+.main .vessel image{
+    width: 5rem;
+    height: 5rem;
+}
+.main .vessel .text_box{
+    width: 13.45rem;
+}
+.main .vessel .text_box .h_title{
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    padding-bottom: 0.25rem;
+}
+.main .vessel .text_box .rank{
+     color: rgba(0,0,0,.5);
+     white-space: nowrap;
+     margin: 0;
+     padding: 0;
+     font-size: 0.7rem;
+     line-height: 1.1rem;
+     width: 95%;
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+}
+.main .vessel .text_box .rank text{
+    color: black;
+}
+
+
+
+

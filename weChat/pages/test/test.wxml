@@ -1,0 +1,58 @@
+
+<view class="nav_p">
+    <button class="{{now == 1 ? 'now_' : ''}}" bindtap="buttonClick" data-index= "1">推荐</button>
+    <button class="{{now == 2 ? 'now_' : ''}}" bindtap="buttonClick" data-index= "2">排行榜</button>
+    <button class="{{now == 3 ? 'now_' : ''}}" bindtap="buttonClick" data-index= "3">搜索</button>
+</view>
+<view class="main" wx:if="{{now == 1}}">
+    <view class="swiper">
+        <swiper indicator-dots="true" autoplay="true" circular="true">
+            <swiper-item wx:for="{{navimg}}" wx:key="{{index}}">
+                <image src="{{item.picUrl}}"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+    <view class="list_main">
+        <text class="fm">电台</text>
+        <view class="list">
+            <view class="listd" wx:for="{{dataT}}">
+                <view class="box">
+                    <image src="{{item.picUrl}}"></image>
+                    <!--<view class="lisennum"></view>-->
+                    <view class="oplisen"></view>
+                </view>
+                <text class="title">{{item.Ftitle}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="list_main">
+        <text class="fm">电台</text>
+        <view class="list">
+            <view class="listd" wx:for="{{dataH}}">
+                 <view class="box">
+                    <image src="{{item.picUrl}}"></image>
+                    <view class="lisennum">{{item.accessnum/10000}}万</view>
+                    <view class="oplisen"></view>
+                 </view>
+                <text class="title">{{item.songListDesc}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+ <view class="main" wx:if="{{now == 2}}">
+    <view class="vessel" wx:for="{{ntdata}}">
+        <image src="{{item.picUrl}}"></image>
+        <view class="text_box">
+            <text class="h_title">{{item.topTitle}}</text>
+            <view wx:for="{{item.songList}}" class="rank">
+                {{index+1}} <text>{{item.songname}}</text>-{{item.singername}}
+            </view>
+        </view>
+        <view class="icon_box"></view>
+    </view>
+</view>
+<view class="main" wx:if="{{now == 3}}">
+    显示第3块
+</view>

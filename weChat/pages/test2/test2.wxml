@@ -1,0 +1,23 @@
+<!--pages/test2/test2.wxml-->
+<scroll-view style="width: 100%;height: 100%;">
+    <view class="storylist" wx:if="{{list}}">
+        <text class="storylist_title">鬼故事列表</text>
+        <view class="story_box" wx:for="{{storylist}}">
+            
+                <image src="{{item.img}}"></image>
+            
+            <view class="test_box">
+                <text>{{item.title}}</text>
+                <view>{{item.desc}}</view>
+            </view>
+            <button class="checkbtn" data-id="{{item.id}}" bindtap="checkstory"></button>
+        </view>
+    </view>
+
+    <view class="storydetail" wx:if="{{detail}}">
+    <button class="back" bindtap="backlist">返回故事列表</button>
+        <text>
+            {{storydetail}}
+        </text>
+    </view>
+</scroll-view>

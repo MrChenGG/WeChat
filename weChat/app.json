@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/test/test",
+    "pages/logs/logs",
+    "pages/test2/test2"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "../img/index.png",
+      "selectedIconPath": "../img/index-active.png"
+      }, 
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "../img/logs.png",
+        "selectedIconPath": "../img/logs-active.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "音乐",
+        "iconPath": "../img/music.png",
+        "selectedIconPath": "../img/music-active.png"
+      },
+      {
+        "pagePath": "pages/test2/test2",
+        "text": "故事",
+        "iconPath": "../img/story.png",
+        "selectedIconPath": "../img/story-active.png"
+      }
+      ],
+    "borderStyle":"white"
+  }
+}
